@@ -38,6 +38,7 @@ dependencies:
   hooks_riverpod: ^2.3.6
   get: ^4.6.0
   flutter_hooks: ^0.18.5+1
+  flutter_svg:
 
 dev_dependencies:
   flutter_test:

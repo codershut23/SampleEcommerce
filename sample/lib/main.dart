@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:sample/LoginScreen.dart';
+
+import 'flashscreen.dart';
 void main() async {
   
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
       
       initialRoute: "/LoginPage",
       routes: {
-        "/": (context) => LoginPage(),
+        "/": (context) => SplashScreen(),
         "/VersionUpdate": (context) => LoginPage(
         ),
         "/LoginPage": (context) => LoginPage(),
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: '/',
-          page: () => LoginPage(),
+          page: () => SplashScreen(),
           binding: HomeBinding(),
         ),
         GetPage(

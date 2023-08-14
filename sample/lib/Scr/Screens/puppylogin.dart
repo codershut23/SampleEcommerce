@@ -38,7 +38,6 @@ class _puppyloginState extends State<puppylogin> {
             ),
 
             Container(
-
               margin: EdgeInsets.only(top:16, left: 55, right: 55),
               decoration: BoxDecoration(
                 border: Border.all(color: white, width: 1.0),
